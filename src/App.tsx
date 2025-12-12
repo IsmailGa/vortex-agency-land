@@ -13,6 +13,7 @@ import PortfolioPage from "@/pages/PortfolioPage";
 import PricingPage from "@/pages/PricingPage";
 import ContactPage from "@/pages/ContactPage";
 import NotFound from "@/pages/NotFound";
+import { ScrollToTop } from "@/lib/utils";
 
 const queryClient = new QueryClient();
 
@@ -24,6 +25,7 @@ const App = () => (
           <Toaster />
           <Sonner />
           <BrowserRouter>
+          <ScrollToTop />
             <div className="min-h-screen flex flex-col">
               <Navbar />
               <main className="flex-1">
